@@ -50,7 +50,7 @@ def p_pointed(start_list):
     return res_list
 
 
-def preparing_information(origin_list): # Эта функция состоит из нескольких функция для обработки данных
+def preparing_information(origin_list): # Эта функция состоит из нескольких функций для обработки списков
     step_one = p_bloomed(origin_list) # "Распаковывает" списки в общий список
     step_two = p_cut(step_one)        # Убирает слова с шестью и меньше символами
     step_three = p_pointed(step_two)  # Сортирует слова по количеству их упоминаний, начиная от самых частых
